@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#c8a7f2">
+  <title> لسلمى 💜</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sparkle-layer" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#home"><span>♡</span> حكايتنا الصغيرة</a>
+    <button id="musicToggle" class="music-toggle" type="button" aria-label="تشغيل أو إيقاف الموسيقى">♫ <span>الموسيقى</span></button>
+  </header>
+
+  <main id="home">
+    <section id="lockScreen" class="screen lock-screen">
+      <div class="lock-card">
+        <div class="avatar-wrap">
+          <div class="avatar" aria-hidden="true">🦋</div>
+          <span class="avatar-ring"></span>
+        </div>
+        <p class="tiny-label">A LITTLE PLACE FOR YOU</p>
+        <h1>جاهزة؟ <span>♡</span></h1>
+        <p class="english-subtitle">my everything</p>
+        <form id="passwordForm" class="password-form">
+          <label for="passwordInput">Password</label>
+          <input id="passwordInput" type="password" placeholder="اكتبي كلمة السر" autocomplete="off" required>
+          <button class="unlock-button" type="submit">Unlock <span>♡</span></button>
+          <p id="passwordError" class="error-message" role="alert" hidden>مش دي كلمة السر يا قشطوطه 💜 جرّبي تاني</p>
+        </form>
+        <p class="password-hint">تلميح: كلمة السر اللي بينكم ✨</p>
+        <div class="butterfly butterfly-one">🦋</div><div class="butterfly butterfly-two">🦋</div><div class="butterfly butterfly-three">🦋</div>
+      </div>
+    </section>
+
+    <section id="choiceScreen" class="screen choice-screen" hidden>
+      <div class="choice-intro">
+        <span class="eyebrow">سؤال صغير لقلبك 💌</span>
+        <h2>طب قوليلي بقى…</h2>
+        <p>فيه سؤال واحد بس محتاج إجابة من أحلى قشطوطه 💜</p>
+      </div>
+      <div class="choice-cards">
+        <button id="noLoveButton" class="choice-card no-card" type="button">
+          <span class="choice-emoji">🤢</span><span>مش بتحبيني؟</span>
+        </button>
+        <button id="loveButton" class="choice-card love-card" type="button">
+          <span class="choice-emoji">💜</span><span>بتحبيني؟</span>
+        </button>
+      </div>
+      <p id="choiceNote" class="choice-note" aria-live="polite">اختاري إجابتك… لو عرفتي تمسكي الزرار الأول 😂</p>
+    </section>
+
+    <section id="welcomeScreen" class="screen welcome-screen" hidden>
+      <div class="welcome-card">
+        <div class="welcome-heart">💗</div>
+        <p class="tiny-label">UNLOCKED WITH LOVE</p>
+        <h2>كنت عارف إنك هتختاري القلب 💜</h2>
+        <p>تعالي بقى، فيه كلام كتير عايز أقولهولك.</p>
+        <button id="startJourney" class="main-button" type="button">افتحي حكايتنا <span>↓</span></button>
+      </div>
+    </section>
+
+    <div id="loveContent" hidden>
+      <section class="hero">
+        <div class="hero-orb"></div>
+        <span class="eyebrow">رسالة مخصوص ليكي يا سلمى</span>
+        <h1>إنتِ <span>أجمل</span><br>حاجة في حكايتي 💜</h1>
+        <p>مهما حصل بينا، فيه كلام من قلبي نفسي يوصلك بهدوء ومن غير زعل.</p>
+        <a class="main-button" href="#message">اقري رسالتي <span>↓</span></a>
+        <div class="hero-butterfly">🦋</div>
+      </section>
+
+      <section id="message" class="section">
+        <div class="section-heading"><span class="section-number">01 — من قلبي</span><h2>رسالة ليكي يا قشطوطه 💌</h2><p>خدي وقتك واقريها للآخر.</p></div>
+        <article class="message-card">
+          <div class="message-top"><span> لسلمى سمير</span><span>بكل الحب ♡</span></div>
+          <p class="salutation">يا أحلى وأجمل حاجة شافتها عيني،</p>
+          <p>أنا بحبك و مش هاين عندي زعلك ده و عارف اني غلطت و اه زعلان منك بس هنتعاتب و م عاوزك تزعلي مني يا احلي و اجمل حاجه شافتها عيني مقدرش استغني عنك مهما كان بموت فيكي يا قشطوطه مستر حسن</p>
+          <p class="signature">من مستر حسن💜</p>
+          <div class="message-heart">♥</div>
+        </article>
+      </section>
+
+      <section class="section gallery-section" id="memories">
+        <div class="section-heading"><span class="section-number">02 — ذكرياتنا</span><h2>شوية صور بحبهم 📸</h2></div>
+        <div class="photo-gallery">
+          <figure class="photo-card"><img src="assets/photos/photo1.jpg" alt="ذكرى جميلة ١" onerror="this.style.display='none';this.parentElement.classList.add('empty-photo')"></figure>
+          <figure class="photo-card"><img src="assets/photos/photo2.jpg" alt="ذكرى جميلة ٢" onerror="this.style.display='none';this.parentElement.classList.add('empty-photo')"></figure>
+          <figure class="photo-card"><img src="assets/photos/photo3.jpg" alt="ذكرى جميلة ٣" onerror="this.style.display='none';this.parentElement.classList.add('empty-photo')"></figure>
+          <figure class="photo-card"><img src="assets/photos/photo4.jpg" alt="ذكرى جميلة ٤" onerror="this.style.display='none';this.parentElement.classList.add('empty-photo')"></figure>
+        </div>
+      </section>
+
+      <section class="section scratch-section">
+        <div class="section-heading"><span class="section-number">03 — سر صغير</span><h2>فيه رسالة مستخبية هنا 👀</h2><p>خربشي بإصبعك أو بالماوس عشان تكتشفيها.</p></div>
+        <div class="scratch-card">
+          <div class="scratch-under">
+            <span class="scratch-heart">💜</span>
+            <p>يا سلمى، مهما اختلفنا، إنتِ غالية عندي أوي. نفسي نتكلم ونفهم بعض بهدوء، من غير ما الزعل ينسينا الحلو اللي بينا. بحبك يا قشطوطه ♡</p>
+          </div>
+          <canvas id="scratchCanvas" aria-label="اخدشي هنا لإظهار رسالة الحب"></canvas>
+          <span class="scratch-label">اخدشي الرسالة هنا ✨</span>
+        </div>
+        <button id="resetScratch" class="subtle-button" type="button">إعادة إخفاء الرسالة</button>
+      </section>
+
+      <section class="section heart-counter-section">
+        <div class="section-heading"><span class="section-number">04 — شوية كلام حلو</span><h2>اضغطي على القلب 💗</h2><p>كل ضغطة ليها رسالة مخصوصة ليكي.</p></div>
+        <div class="heart-counter-wrap">
+          <div class="counter-label">رسائل لسه مستنياكي</div>
+          <button id="messageHeart" class="big-heart-button" type="button" aria-label="اعرضي رسالة حب جديدة">♥</button>
+          <div class="counter-progress"><span id="counterProgress"></span></div>
+          <p id="counterText" class="counter-text" aria-live="polite">اضغطي على القلب عشان تفتحي أول رسالة</p>
+          <p id="counterNumber" class="counter-number">0 / 7</p>
+        </div>
+      </section>
+
+      <section class="section relationship-counter-section" id="ourBeginning">
+        <div class="section-heading">
+          <span class="section-number">04 — من يوم ما بدأت حكايتنا</span>
+          <h2>من 16 مارس 2024 وإحنا لينا حكاية 💜</h2>
+          <p>كل يوم عدى جزء من حكايتنا الصغيرة.</p>
+        </div>
+        <div class="relationship-card">
+          <div class="relationship-heart" aria-hidden="true">♥</div>
+          <p class="relationship-caption">بقالنا من يوم البداية</p>
+          <div class="relationship-time" aria-live="polite">
+            <div><strong id="relationshipDays">—</strong><span>يوم</span></div>
+            <div><strong id="relationshipHours">—</strong><span>ساعة</span></div>
+            <div><strong id="relationshipMinutes">—</strong><span>دقيقة</span></div>
+            <div><strong id="relationshipSeconds">—</strong><span>ثانية</span></div>
+          </div>
+          <p class="relationship-date">16 / 03 / 2024 <span>♡</span></p>
+          <p class="relationship-note">وأجمل حاجة في الحكاية إنها لسه غالية على قلبي.</p>
+        </div>
+      </section>
+
+      <section class="section ending">
+        <div class="ending-heart">♡</div>
+        <h2>خلي بالك من نفسك يا سلمى</h2>
+        <p>يا رب دايمًا تلاقي في أيامك راحة وفرحة تليق بقلبك.</p>
+        <a href="#home" class="back-link">نرجع لأول الحكاية ↑</a>
+      </section>
+    </div>
+  </main>
+
+  <footer>صُنعت بحب مخصوص لسلمى <span>♡</span> مستر حسن</footer>
+  <button id="vinylButton" class="vinyl-button" type="button" aria-label="تشغيل الموسيقى أو إيقافها" title="شغّل / أوقف الموسيقى">
+    <span class="vinyl-disc"><span class="vinyl-label">♡</span></span><span class="vinyl-note">♫</span>
+  </button>
+  <audio id="backgroundMusic" src="assets/audio/music.mp3" loop preload="auto" autoplay></audio>
+  <script src="script.js"></script>
+</body>
+</html>
